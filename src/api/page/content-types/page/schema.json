@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Pages",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "bouttons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::boutton.boutton",
+      "mappedBy": "page"
+    },
+    "backgroundImage_url": {
+      "type": "text"
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::input.input",
+      "mappedBy": "page"
+    },
+    "texts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::text.text",
+      "mappedBy": "page"
+    }
+  }
+}

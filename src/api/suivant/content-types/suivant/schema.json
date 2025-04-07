@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "suivants",
+  "info": {
+    "singularName": "suivant",
+    "pluralName": "suivants",
+    "displayName": "Suivant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "image_Url_Non_Rempli": {
+      "type": "text"
+    },
+    "image_Url_Rempli": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "designs",
+  "info": {
+    "singularName": "design",
+    "pluralName": "designs",
+    "displayName": "Design_button",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "couleur_fond": {
+      "type": "string"
+    },
+    "couleur_texte": {
+      "type": "string"
+    },
+    "taille_texte": {
+      "type": "decimal"
+    },
+    "padding_top": {
+      "type": "decimal"
+    },
+    "padding_right": {
+      "type": "decimal"
+    },
+    "padding_bottom": {
+      "type": "decimal"
+    },
+    "padding_left": {
+      "type": "decimal"
+    },
+    "margin_top": {
+      "type": "decimal"
+    },
+    "margin_right": {
+      "type": "decimal"
+    },
+    "margin_bottom": {
+      "type": "decimal"
+    },
+    "margin_left": {
+      "type": "decimal"
+    },
+    "boutton": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::boutton.boutton",
+      "mappedBy": "design"
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "border_color": {
+      "type": "string"
+    },
+    "border": {
+      "type": "decimal"
+    },
+    "border_radius": {
+      "type": "decimal"
+    }
+  }
+}

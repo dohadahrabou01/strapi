@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inputs",
+  "info": {
+    "singularName": "input",
+    "pluralName": "inputs",
+    "displayName": "Inputs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "email",
+        "password",
+        "number"
+      ]
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "text_color": {
+      "type": "string"
+    },
+    "border_color": {
+      "type": "string"
+    },
+    "border_width": {
+      "type": "decimal"
+    },
+    "border_radius": {
+      "type": "decimal"
+    },
+    "padding_top": {
+      "type": "decimal"
+    },
+    "margin_top": {
+      "type": "decimal"
+    },
+    "padding_right": {
+      "type": "decimal"
+    },
+    "padding_bottom": {
+      "type": "decimal"
+    },
+    "padding_left": {
+      "type": "decimal"
+    },
+    "margin_right": {
+      "type": "decimal"
+    },
+    "margin_bottom": {
+      "type": "decimal"
+    },
+    "margin_left": {
+      "type": "decimal"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "inputs"
+    },
+    "underline": {
+      "type": "boolean"
+    },
+    "underline_color": {
+      "type": "string"
+    },
+    "identifiant": {
+      "type": "string"
+    }
+  }
+}

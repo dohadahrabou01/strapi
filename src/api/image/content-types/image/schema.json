@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "images",
+  "info": {
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Images_Texts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Image_Url": {
+      "type": "string"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "above",
+        "below",
+        "left",
+        "right"
+      ]
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "text": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::text.text",
+      "mappedBy": "image"
+    },
+    "width": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bouttons",
+  "info": {
+    "singularName": "boutton",
+    "pluralName": "bouttons",
+    "displayName": "Bouttons",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "action": {
+      "type": "text"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "bouttons"
+    },
+    "design": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::design.design",
+      "inversedBy": "boutton"
+    }
+  }
+}

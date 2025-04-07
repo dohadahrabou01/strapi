@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "texts",
+  "info": {
+    "singularName": "text",
+    "pluralName": "texts",
+    "displayName": "Texts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "margin_top": {
+      "type": "decimal"
+    },
+    "margin_right": {
+      "type": "decimal"
+    },
+    "margin_bottom": {
+      "type": "decimal"
+    },
+    "margin_left": {
+      "type": "decimal"
+    },
+    "padding_top": {
+      "type": "decimal"
+    },
+    "padding_right": {
+      "type": "decimal"
+    },
+    "padding_bottom": {
+      "type": "decimal"
+    },
+    "padding_left": {
+      "type": "decimal"
+    },
+    "text_color": {
+      "type": "string"
+    },
+    "font_size": {
+      "type": "decimal"
+    },
+    "font_weight": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "bold"
+      ]
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "texts"
+    },
+    "position": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "image": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::image.image",
+      "inversedBy": "text"
+    }
+  }
+}
